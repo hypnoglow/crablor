@@ -43,4 +43,3 @@ $parsedArgs = \Docopt::handle($doc, ['argv' => array_slice($argv, 1), 'version' 
 $cli = new \crablor\Crawler();
 $cli->run($parsedArgs);
 exit(0);
-

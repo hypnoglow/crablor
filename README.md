@@ -29,6 +29,23 @@ If you do not care, then just ust:
     
     docker run -i -t --rm --name crablor -v "$PWD":/app -w /app php:7.1-alpine /app/crablor.php "https://the.site" --out sitemap.txt --sleepMS 1000
 
+## Development
+
+After changes were made, check the code with phpcs:
+
+    docker run -v "$PWD":/app hypnoglow/phpcs phpcs \
+        --standard=PSR2 --colors -p \
+        --extensions=php --ignore=/vendor \
+        /app/
+
+To fix possible issues:
+
+    docker run -v "$PWD":/app hypnoglow/phpcs phpcbf \
+        --standard=PSR2 -p \
+        --extensions=php --ignore=/vendor \
+        /app/
+
+
 ## License
 
 [MIT](https://github.com/hypnoglow/crablor/blob/master/LICENSE.md).

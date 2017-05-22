@@ -1,5 +1,8 @@
 {
     "name": "hypnoglow/crablor",
+    "description": "Simple website crawler",
+    "homepage": "https://github.com/hypnoglow/crablor",
+    "license": "MIT",
     "type": "project",
     "authors": [
         {
