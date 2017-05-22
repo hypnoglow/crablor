@@ -1,0 +1,21 @@
+{
+    "name": "hypnoglow/crablor",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Igor Zibarev",
+            "email": "zibarev.i@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6.2",
+        "docopt/docopt": "^1.0",
+        "mgargano/simplehtmldom": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "crablor\\": "src"
+        }
+    }
+}
